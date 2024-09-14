@@ -1,0 +1,41 @@
+.crack-detection-container {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .image-preview img, .marked-image img {
+    margin-top: 20px;
+    border: 2px solid #ddd;
+  }
+  
+  .class-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .class-button:hover {
+    background-color: #45a049;
+  }
+  
+  table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
