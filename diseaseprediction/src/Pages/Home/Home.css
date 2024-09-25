@@ -31,10 +31,9 @@ body, html {
 }
 
 .hero p {
-    color: white; /* Ensure the paragraph text is white */
-    font-size: 1.5rem;
-    margin-bottom: 30px;
-  }
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
 
 .hero .buttons {
   display: flex;
@@ -73,6 +72,7 @@ body, html {
   display: flex;
   justify-content: center;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -142,4 +142,140 @@ body, html {
 
 .tertiary-button:hover {
   background-color: #40916c;
+}
+
+/* Responsive Styles */
+
+/* Mobile (320px - 375px) */
+@media (max-width: 375px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  .hero .buttons {
+    flex-direction: column;
+  }
+
+  .main-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .features h2, .about h2 {
+    font-size: 2rem;
+  }
+
+  .feature-cards {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+/* Mobile (475px) */
+@media (max-width: 475px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .hero .buttons {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .main-button {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+  }
+
+  .features h2, .about h2 {
+    font-size: 2.2rem;
+  }
+
+  .card h3 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Tablet (768px) */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.3rem;
+  }
+
+  .hero .buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .main-button {
+    padding: 12px 28px;
+    font-size: 1.1rem;
+  }
+
+  .features h2, .about h2 {
+    font-size: 2.2rem;
+  }
+
+  .card {
+    width: 250px;
+  }
+
+  .feature-cards {
+    flex-wrap: wrap;
+  }
+}
+
+/* Laptop (1024px) */
+@media (max-width: 1024px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 1.4rem;
+  }
+
+  .main-button {
+    padding: 14px 30px;
+  }
+
+  .features h2, .about h2 {
+    font-size: 2.4rem;
+  }
+}
+
+/* Laptop (1140px) */
+@media (max-width: 1140px) {
+  .hero h1 {
+    font-size: 3.2rem;
+  }
+
+  .hero p {
+    font-size: 1.4rem;
+  }
+
+  .features h2, .about h2 {
+    font-size: 2.4rem;
+  }
+
+  .card {
+    width: 280px;
+  }
 }

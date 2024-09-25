@@ -1,7 +1,11 @@
+div {
+    padding-bottom: 20px;
+}
+
 .navBar {
-    background-color:  #4CAF50;
+    background-color: #45a049;
+    border-radius: 20px;
     padding: 1rem;
-    margin-bottom: 100px;
 }
 
 .navList {
@@ -13,8 +17,9 @@
 }
 
 .navItem {
-    color: white;;
+    color: white;
     margin: 0 1rem;
+    font-size: 1.2rem;
 }
 
 .navLink {
@@ -26,4 +31,74 @@
 
 .navLink:hover {
     color: #f0a500;
+}
+
+/* Media Queries */
+
+/* Mobile 320px */
+@media (max-width: 320px) {
+    .navList {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navItem {
+        margin: 0.5rem 0;
+        font-size: 1rem;
+    }
+}
+
+/* Mobile 375px */
+@media (max-width: 375px) {
+    .navList {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navItem {
+        margin: 0.5rem 0;
+        font-size: 1.1rem;
+    }
+}
+
+/* Mobile 475px */
+@media (max-width: 475px) {
+    .navList {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navItem {
+        margin: 0.5rem 0;
+        font-size: 1.2rem;
+    }
+}
+
+/* Tablet 768px */
+@media (max-width: 768px) {
+    .navList {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navItem {
+        margin: 0.5rem 0;
+        font-size: 1.3rem;
+    }
+}
+
+/* Laptop 1024px */
+@media (max-width: 1024px) {
+    .navItem {
+        margin: 0 0.75rem;
+        font-size: 1.1rem;
+    }
+}
+
+/* Laptop 1140px */
+@media (max-width: 1140px) {
+    .navItem {
+        margin: 0 1rem;
+        font-size: 1.2rem;
+    }
 }
