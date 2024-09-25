@@ -1,45 +1,176 @@
-.crack-detection-container {
-  max-width: 800px;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background-color: #f9f9f9;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Base Mobile Styles (default for all small devices) */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
 }
-  
-  .image-preview img, .marked-image img {
-    margin-top: 20px;
-    border: 2px solid #ddd;
+
+.crack-detection-container {
+  padding: 10px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%; /* Full width on mobile */
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.image-preview img,
+.marked-image img {
+  width: 100%; /* Full width for mobile */
+  max-width: 100%; /* Ensure image doesn't exceed container */
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.class-button {
+  display: block;
+  width: 100%; /* Full width for easier mobile use */
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  font-size: 16px;
+  margin: 15px 0;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.class-button:hover {
+  background-color: #45a049;
+}
+
+table {
+  width: 100%; /* Full width on mobile */
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Mobile: 320px (Very small screens) */
+@media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 18px;
   }
-  
-  .class-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  .class-button:hover {
-    background-color: #45a049;
-  }
-  
-  table {
-    margin: 20px auto;
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
+
   table, th, td {
-    border: 1px solid #ddd;
-    text-align: center;
+    font-size: 12px;
     padding: 8px;
   }
-  
-  th {
-    background-color: #f2f2f2;
+
+  .class-button {
+    font-size: 14px;
+    padding: 10px;
   }
-  
+}
+
+/* Mobile: 375px (iPhone X, Galaxy S9) */
+@media only screen and (max-width: 375px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  table, th, td {
+    font-size: 13px;
+  }
+}
+
+/* Mobile: 475px (large mobile screens) */
+@media only screen and (max-width: 475px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .class-button {
+    padding: 14px;
+    font-size: 16px;
+  }
+
+  table, th, td {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
+/* Tablet: 768px (iPads, small tablets) */
+@media only screen and (max-width: 768px) {
+  .crack-detection-container {
+    max-width: 90%;
+  }
+
+  .image-preview img,
+  .marked-image img {
+    max-width: 500px; /* Keep images at a reasonable width */
+  }
+
+  table, th, td {
+    font-size: 15px;
+    padding: 14px;
+  }
+
+  .class-button {
+    font-size: 17px;
+    padding: 15px;
+  }
+}
+
+/* Laptop: 1024px (small laptops, large tablets) */
+@media only screen and (max-width: 1024px) {
+  .crack-detection-container {
+    max-width: 80%;
+  }
+
+  .image-preview img,
+  .marked-image img {
+    max-width: 600px;
+  }
+
+  table, th, td {
+    font-size: 16px;
+    padding: 16px;
+  }
+
+  .class-button {
+    font-size: 18px;
+    padding: 16px;
+  }
+}
+
+/* Laptop: 1140px (larger laptops) */
+@media only screen and (max-width: 1140px) {
+  .crack-detection-container {
+    max-width: 75%;
+  }
+
+  .image-preview img,
+  .marked-image img {
+    max-width: 700px;
+  }
+
+  table, th, td {
+    font-size: 17px;
+    padding: 18px;
+  }
+
+  .class-button {
+    font-size: 18px;
+    padding: 18px;
+  }
+}
